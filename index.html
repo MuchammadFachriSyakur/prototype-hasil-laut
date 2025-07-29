@@ -4,176 +4,189 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CV. Rasa Alam Nusantara</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Lato&display=swap"
-      rel="stylesheet"
-    />
     <style>
       * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-      }
-      body {
-        font-family: "Lato", sans-serif;
-        color: #333;
-        background-color: #fff;
         scroll-behavior: smooth;
       }
-      nav {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        background-color: #fff;
-        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 15px 40px;
-        z-index: 1000;
-      }
-      nav .logo {
-        font-family: "Playfair Display", serif;
-        font-size: 1.8em;
-        color: #c59d5f;
-      }
-      nav ul {
-        list-style: none;
-        display: flex;
-        gap: 25px;
-      }
-      nav ul li a {
-        text-decoration: none;
+      body {
+        font-family: "Segoe UI", sans-serif;
+        line-height: 1.6;
+        background-color: #fdfcf9;
         color: #333;
-        font-weight: bold;
-        transition: color 0.3s;
       }
-      nav ul li a:hover {
-        color: #c59d5f;
+      a {
+        text-decoration: none;
+        color: inherit;
       }
 
       header {
         background-image: url("image/hero.jpg");
-        background-size: cover;
-        background-position: center;
         height: 100vh;
         position: relative;
+        color: white;
+      }
+      .overlay {
+        background: rgba(0, 0, 0, 0.6);
+        height: 100%;
+        width: 100%;
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
         text-align: center;
+        padding: 20px;
       }
-      .hero-overlay {
-        background-color: rgba(0, 0, 0, 0.6);
-        color: white;
-        padding: 40px;
-        border-radius: 10px;
+      header h1 {
+        font-size: 3rem;
+        color: #c59d5f;
       }
-      .hero-overlay h1 {
-        font-family: "Playfair Display", serif;
-        font-size: 3.2em;
-        margin-bottom: 15px;
+      header p {
+        font-size: 1.2rem;
+        margin-top: 10px;
       }
-      .hero-overlay p {
-        font-size: 1.3em;
-        margin-bottom: 25px;
+      .cta-buttons {
+        margin-top: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
       }
       .cta-buttons a {
-        text-decoration: none;
-        background-color: #c59d5f;
+        background: #c59d5f;
+        padding: 12px 24px;
         color: white;
-        padding: 10px 25px;
-        border-radius: 30px;
-        margin: 0 10px;
-        font-weight: bold;
-        transition: background 0.3s;
+        border-radius: 5px;
+        transition: background 0.3s ease;
       }
       .cta-buttons a:hover {
-        background-color: #a07634;
+        background: #a58040;
+      }
+
+      nav {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background: white;
+        padding: 10px 20px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        z-index: 999;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      nav h2 {
+        color: #c59d5f;
+      }
+      nav ul {
+        display: flex;
+        list-style: none;
+        gap: 25px;
+      }
+      nav ul li a {
+        font-weight: bold;
+        color: #333;
+      }
+
+      .mobile-menu {
+        display: none;
+        font-size: 1.8rem;
+        cursor: pointer;
       }
 
       section {
+        padding: 80px 20px;
+        max-width: 1100px;
+        margin: auto;
         opacity: 0;
         transform: translateY(40px);
         transition: all 0.8s ease-out;
-        padding: 80px 30px;
-        max-width: 1200px;
-        margin: auto;
       }
       section.visible {
         opacity: 1;
         transform: translateY(0);
       }
       section h2 {
-        font-family: "Playfair Display", serif;
+        font-size: 2.5rem;
         color: #c59d5f;
-        font-size: 2.4em;
-        text-align: center;
         margin-bottom: 30px;
+        text-align: center;
+      }
+      section p {
+        text-align: center;
+        margin-bottom: 40px;
       }
 
       .produk-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
         gap: 30px;
       }
       .produk-card {
         background: white;
         border: 1px solid #eee;
-        border-radius: 12px;
-        overflow: hidden;
-        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
-        transition: transform 0.4s ease;
-      }
-      .produk-card:hover {
-        transform: translateY(-10px);
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.08);
+        text-align: center;
       }
       .produk-card img {
         width: 100%;
-        height: 220px;
+        height: 150px;
         object-fit: cover;
+        border-radius: 6px;
       }
       .produk-card h3 {
-        padding: 15px;
-        font-size: 1.3em;
-        color: #222;
-      }
-      .produk-card p {
-        padding: 0 15px 20px;
-        color: #555;
-        font-size: 0.95em;
+        margin-top: 15px;
+        color: #c59d5f;
       }
 
       footer {
-        background-color: #1a1a1a;
+        background: #222;
         color: #ccc;
         text-align: center;
-        padding: 50px 20px;
+        padding: 40px 20px;
       }
       footer h3 {
-        font-size: 1.5em;
-        margin-bottom: 10px;
-      }
-      footer p {
-        margin: 5px 0;
+        color: #c59d5f;
+        margin-bottom: 15px;
       }
 
-      @media (max-width: 600px) {
-        .hero-overlay h1 {
-          font-size: 2em;
-        }
+      @media (max-width: 768px) {
         nav ul {
+          display: none;
           flex-direction: column;
-          gap: 10px;
+          background: white;
+          position: absolute;
+          top: 60px;
+          right: 20px;
+          padding: 10px 20px;
+          box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+          gap: 15px;
+        }
+        nav ul.show {
+          display: flex;
+        }
+        .mobile-menu {
+          display: block;
+        }
+        header h1 {
+          font-size: 2.2rem;
+        }
+        header p {
+          font-size: 1rem;
         }
       }
     </style>
   </head>
   <body>
     <nav>
-      <div class="logo">Rasa Alam Nusantara</div>
-      <ul>
+      <h2>Rasa Alam</h2>
+      <div class="mobile-menu" onclick="toggleMenu()">☰</div>
+      <ul id="nav-links">
         <li><a href="#home">Beranda</a></li>
         <li><a href="#tentang">Tentang</a></li>
         <li><a href="#produk">Produk</a></li>
@@ -182,8 +195,8 @@
     </nav>
 
     <header id="home">
-      <div class="hero-overlay">
-        <h1>Rasa Alam Nusantara</h1>
+      <div class="overlay">
+        <h1>CV. Rasa Alam Nusantara</h1>
         <p>Dari Laut dan Ladang Nusantara, untuk Meja Makan Anda</p>
         <div class="cta-buttons">
           <a href="#produk">Lihat Produk</a>
@@ -194,11 +207,11 @@
 
     <section id="tentang">
       <h2>Tentang Kami</h2>
-      <p style="text-align: center; max-width: 800px; margin: auto">
-        Kami adalah perusahaan lokal yang berkomitmen mengolah hasil bumi dan
-        laut Indonesia secara tradisional dan higienis. Dengan rasa premium dan
-        kualitas terbaik, kami hadir untuk memenuhi kebutuhan rumah tangga,
-        restoran, hingga ekspor.
+      <p>
+        CV. Rasa Alam Nusantara adalah produsen dan distributor hasil bumi dan
+        laut berkualitas tinggi. Produk kami meliputi kecap, terasi, kerupuk
+        udang, rengginang, ikan asin, dan banyak lagi — langsung dari petani dan
+        nelayan lokal ke tangan Anda.
       </p>
     </section>
 
@@ -265,29 +278,22 @@
     </section>
 
     <section id="kontak">
-      <h2>Hubungi Kami</h2>
-      <p style="text-align: center">
-        Email: info@rasanusantara.id | WhatsApp: +62 812-3456-7890
-      </p>
+      <h2>Kontak Kami</h2>
+      <p>📍 Jl. Raya Laut No.88, Indramayu – Indonesia</p>
+      <p>📞 +62 812-3456-7890</p>
+      <p>📧 info@rasanusantara.id</p>
     </section>
 
     <footer>
       <h3>CV. Rasa Alam Nusantara</h3>
-      <p>Jl. Raya Laut No. 88, Indramayu – Indonesia</p>
-      <p>Jam Operasional: Senin–Sabtu, 08.00 – 17.00 WIB</p>
-      <p>Email: info@rasanusantara.id | WA: +62 812-3456-7890</p>
       <p>&copy; 2025. Seluruh hak cipta dilindungi.</p>
     </footer>
 
     <script>
-      const navLinks = document.querySelectorAll("nav ul li a");
-      navLinks.forEach((link) => {
-        link.addEventListener("click", (e) => {
-          e.preventDefault();
-          const target = document.querySelector(link.getAttribute("href"));
-          target.scrollIntoView({ behavior: "smooth" });
-        });
-      });
+      function toggleMenu() {
+        const navLinks = document.getElementById("nav-links");
+        navLinks.classList.toggle("show");
+      }
 
       const sections = document.querySelectorAll("section");
       window.addEventListener("scroll", () => {
