@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title id="site-title">Sawit Corp</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="preload"
+      as="font"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/fonts/bootstrap-icons.woff2"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm"
+    >
+      <div class="container">
+        <a class="navbar-brand fw-bold fs-4" href="#" id="nav-company">
+          <i class="bi bi-building me-2"></i>Sawit Corp
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#about" id="nav-about">Tentang</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#products" id="nav-products">Produk</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#testimonials" id="nav-testimonials"
+                >Testimoni</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact" id="nav-contact">Kontak</a>
+            </li>
+          </ul>
+          <div class="ms-3">
+            <select
+              id="lang-switcher"
+              class="form-select form-select-sm bg-dark text-white border-light"
+            >
+              <option value="id">🇮🇩 Indonesia</option>
+              <option value="en">🇬🇧 English</option>
+              <option value="zh">🇨🇳 中文</option>
+              <option value="ja">🇯🇵 日本語</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <section
+      class="vh-100 d-flex align-items-center text-center text-white"
+      style="background: url('assets/img/hero-1.jpg') center/cover no-repeat"
+    >
+      <div
+        class="w-100 h-100 position-absolute top-0 start-0 bg-dark opacity-50"
+      ></div>
+      <div class="container position-relative">
+        <h1 class="display-1 fw-bold" id="hero-title">Sawit Corp</h1>
+        <p class="lead mt-3 fw-semibold" id="hero-subtitle">
+          Solusi Sawit dari Hulu ke Hilir
+        </p>
+        <p class="mt-2 fw-semibold d-none" id="hero-hook"></p>
+        <a
+          href="#contact"
+          class="btn btn-warning btn-lg rounded-pill mt-4 shadow-lg d-inline-flex align-items-center px-4 gap-3"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="1em"
+            height="1em"
+            fill="currentColor"
+            class="fs-5"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M3.654 1.328a.678.678 0 0 1 1.018-.063l2.29 2.29a.678.678 0 0 1 .063.917L6.29 6.854a.678.678 0 0 0 .145.738l2.829 2.829a.678.678 0 0 0 .738.145l2.382-1.735a.678.678 0 0 1 .917.063l2.29 2.29a.678.678 0 0 1-.063 1.018l-2.29 2.29c-.27.27-.64.376-1.018.29-1.35-.32-4.292-1.636-6.48-3.823-2.187-2.187-3.503-5.13-3.823-6.48-.086-.378.02-.749.29-1.018z"
+            />
+          </svg>
+          <i class="bi bi-telephone-outbound fs-5"></i>
+          <span id="hero-cta">Hubungi Kami</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="py-5">
+      <div class="container text-center">
+        <h2 class="text-center mb-5 fw-bold">
+          <i class="bi bi-info-circle me-2"></i>
+          <span id="about-title">Tentang Kami</span>
+        </h2>
+        <p class="lead text-muted mb-5" id="about-desc"></p>
+        <div class="row g-4 justify-content-center">
+          <div class="col-md-5">
+            <div class="card shadow-sm p-4 h-100 text-start">
+              <div class="text-center mb-3">
+                <i class="bi bi-lightbulb-fill text-warning fs-1"></i>
+                <h5 class="fw-bold mt-2 fs-4" id="about-vision-title">Visi</h5>
+              </div>
+              <div id="about-vision" class="list-group list-group-flush"></div>
+            </div>
+          </div>
+
+          <div class="col-md-5">
+            <div class="card shadow-sm p-4 h-100 text-start">
+              <div class="text-center mb-3">
+                <i class="bi bi-flag-fill text-success fs-1"></i>
+                <h5 class="fw-bold mt-2 fs-4" id="about-mission-title">Misi</h5>
+              </div>
+              <div id="about-mission" class="list-group list-group-flush"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products -->
+    <section id="products" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-5 fw-bold">
+          <i class="bi bi-box-seam me-2"></i>
+          <span id="products-title">Produk</span>
+        </h2>
+        <div class="row row-cols-1 row-cols-md-2 g-4" id="products-list"></div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-5 fw-bold">
+          <i class="bi bi-chat-quote me-2"></i>
+          <span id="testimonials-title">Testimoni</span>
+        </h2>
+        <div
+          id="testimonialCarousel"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner" id="testimonials-list"></div>
+          <button
+            class="carousel-control-prev custom-control"
+            type="button"
+            data-bs-target="#testimonialCarousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          </button>
+          <button
+            class="carousel-control-next custom-control"
+            type="button"
+            data-bs-target="#testimonialCarousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-5 fw-bold">
+          <i class="bi bi-envelope me-2"></i>
+          <span id="contact-title">Kontak</span>
+        </h2>
+        <div class="row g-4">
+          <div class="col-md-5">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item bg-transparent border-0">
+                <i class="bi bi-geo-alt me-2"></i
+                ><strong id="contact-address-label">Alamat:</strong>
+                <span id="contact-address"></span>
+              </li>
+              <li class="list-group-item bg-transparent border-0">
+                <i class="bi bi-telephone me-2"></i
+                ><strong id="contact-phone-label">Telp:</strong>
+                <span id="contact-phone"></span>
+              </li>
+              <li class="list-group-item bg-transparent border-0">
+                <i class="bi bi-envelope-at me-2"></i
+                ><strong id="contact-email-label">Email:</strong>
+                <span id="contact-email"></span>
+              </li>
+              <li
+                class="list-group-item bg-transparent border-0 d-none"
+                id="contact-linkedin-wrap"
+              >
+                <i class="bi bi-linkedin me-2"></i
+                ><strong id="contact-linkedin-label">LinkedIn:</strong>
+                <a
+                  href="#"
+                  id="contact-linkedin"
+                  target="_blank"
+                  class="text-decoration-none"
+                ></a>
+              </li>
+            </ul>
+            <a
+              id="contact-whatsapp"
+              class="btn btn-success btn-lg rounded-pill mt-3 shadow-sm"
+              target="_blank"
+            >
+              <i class="bi bi-whatsapp me-2"></i> Chat via WhatsApp
+            </a>
+          </div>
+          <div class="col-md-7">
+            <div class="ratio ratio-16x9 shadow rounded">
+              <iframe
+                id="contact-maps"
+                style="border: 0"
+                allowfullscreen
+                loading="lazy"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery" class="py-5 bg-white">
+      <div class="container">
+        <h2 class="text-center mb-5 fw-bold">
+          <i class="bi bi-images me-2"></i>
+          <p id="gallery-title">Gallery</p>
+        </h2>
+        <div class="row justify-content-center g-4" id="gallery-list">
+          <!-- Item gallery via JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal Preview -->
+    <div class="modal fade" id="galleryModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content bg-dark">
+          <div class="modal-body text-center p-0">
+            <div id="modalContent"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+      <small id="footer-text"></small>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      defer
+    ></script>
+    <script src="assets/js/main.js" defer></script>
+  </body>
+</html>

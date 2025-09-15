@@ -1,0 +1,248 @@
+{
+  "id": {
+    "company": "PT Borneo Semoga Berkah",
+    "nav": {
+      "about": "Tentang",
+      "products": "Produk",
+      "testimonials": "Testimoni",
+      "contact": "Kontak"
+    },
+    "whatsapp": "Chat via WhatsApp",
+    "hero": {
+      "title": "PT Borneo Semoga Berkah",
+      "subtitle": "Perdagangan bungkil & cangkang kelapa sawit",
+      "hook": "Dari limbah sawit menjadi komoditas bernilai",
+      "cta": "Hubungi Kami"
+    },
+    "about": {
+      "title": "Tentang Kami",
+      "visionTitle": "Visi",
+      "missionTitle": "Misi",
+      "desc": "PT Borneo Semoga Berkah (BSB) adalah perusahaan yang bergerak di bidang perdagangan, berfokus pada perdagangan bungkil kelapa sawit (Palm Kernel Meal) dan cangkang kelapa sawit (Palm Kernel Shell). Mengingat banyaknya perusahaan kelapa sawit di Indonesia, khususnya di Kalimantan, timbul limbah produksi yang masih dapat dikelola menjadi bernilai ekonomis. BSB hadir untuk mengubah limbah tersebut menjadi komoditi sumber daya terbarukan, sekaligus berkontribusi terhadap lingkungan yang lebih hijau.",
+      "vision": [
+        "Menjadi perusahaan terkemuka dalam perdagangan cangkang sawit dan bungkil sawit yang berkelanjutan dan bertanggung jawab, serta memberikan nilai tambah bagi para pemangku kepentingan."
+      ],
+      "mission": [
+        "Menyediakan cangkang sawit dan bungkil sawit berkualitas tinggi dan harga kompetitif kepada pelanggan.",
+        "Meningkatkan kepuasan pelanggan melalui pelayanan yang profesional dan responsif.",
+        "Mengembangkan jaringan bisnis yang luas dan kuat untuk meningkatkan volume perdagangan dan pendapatan.",
+        "Meningkatkan kesadaran dan kepatuhan terhadap standar kualitas, keselamatan, dan lingkungan dalam operasional perusahaan.",
+        "Berkontribusi pada pembangunan ekonomi lokal dan nasional melalui penciptaan lapangan kerja dan peningkatan pendapatan."
+      ]
+    },
+    "products": "Produk",
+    "testimonials": {
+      "title": "Testimoni",
+      "items": [
+        {
+          "quote": "Produk berkualitas, pelayanan sangat baik!",
+          "name": "Pak Budi, Riau"
+        },
+        {
+          "quote": "Mitra terpercaya untuk kebutuhan pabrik kami.",
+          "name": "Ibu Sari, Jakarta"
+        }
+      ]
+    },
+    "contact": {
+      "title": "Kontak",
+      "addressLabel": "Alamat:",
+      "address": "Jl. KH Wahid Hasyim RT 39, Samarinda, Kaltim 75119",
+      "phoneLabel": "Telp:",
+      "phone": "0852 5068 8745",
+      "emailLabel": "Email:",
+      "email": "Hadi@BSB.co.id",
+      "whatsapp": "https://wa.me/6285250688745",
+      "linkedinLabel": "LinkedIn:",
+      "linkedin": "https://www.linkedin.com/in/abdul-hadi",
+      "maps": "https://www.google.com/maps/embed?pb=..."
+    },
+    "gallery": {
+      "title": "Galeri"
+    },
+    "footer": "© Tera Software Developer. Semua Hak Dilindungi."
+  },
+  "en": {
+    "company": "PT Borneo Semoga Berkah",
+    "nav": {
+      "about": "About",
+      "products": "Products",
+      "testimonials": "Testimonials",
+      "contact": "Contact"
+    },
+    "whatsapp": "Chat via WhatsApp",
+    "hero": {
+      "title": "PT Borneo Semoga Berkah",
+      "subtitle": "Palm kernel meal & shell trading",
+      "hook": "Turning palm waste into valuable commodities",
+      "cta": "Contact Us"
+    },
+    "about": {
+      "title": "About Us",
+      "visionTitle": "Vision",
+      "missionTitle": "Mission",
+      "desc": "PT Borneo Semoga Berkah (BSB) is a trading company focusing on palm kernel meal and palm kernel shell. With the vast number of palm oil companies in Indonesia, particularly in Kalimantan, a significant amount of production waste is generated. This waste can still be processed into economic value. BSB transforms this by-product into renewable resources and contributes to a greener environment.",
+      "vision": [
+        "To become a leading company in sustainable and responsible trading of palm kernel meal and palm kernel shell, while providing added value to stakeholders."
+      ],
+      "mission": [
+        "Provide high-quality palm kernel meal and palm kernel shell at competitive prices to customers.",
+        "Enhance customer satisfaction through professional and responsive services.",
+        "Expand a strong business network to increase trade volume and revenue.",
+        "Raise awareness and compliance with quality, safety, and environmental standards in company operations.",
+        "Contribute to local and national economic growth by creating jobs and increasing income."
+      ]
+    },
+    "products": "Products",
+    "testimonials": {
+      "title": "Testimonials",
+      "items": [
+        {
+          "quote": "Quality products, excellent service!",
+          "name": "Mr. Budi, Riau"
+        },
+        {
+          "quote": "Trusted partner for our factory needs.",
+          "name": "Mrs. Sari, Jakarta"
+        }
+      ]
+    },
+    "contact": {
+      "title": "Contact",
+      "addressLabel": "Address:",
+      "address": "Jl. KH Wahid Hasyim RT 39, Samarinda, East Kalimantan 75119",
+      "phoneLabel": "Phone:",
+      "phone": "+62 852 5068 8745",
+      "emailLabel": "Email:",
+      "email": "Hadi@BSB.co.id",
+      "whatsapp": "https://wa.me/6285250688745",
+      "linkedinLabel": "LinkedIn:",
+      "linkedin": "https://www.linkedin.com/in/abdul-hadi",
+      "maps": "https://www.google.com/maps/embed?pb=..."
+    },
+    "gallery": {
+      "title": "Gallery"
+    },
+    "footer": "© Tera Software Developer. All Rights Reserved."
+  },
+  "zh": {
+    "company": "PT Borneo Semoga Berkah",
+    "nav": {
+      "about": "关于我们",
+      "products": "产品",
+      "testimonials": "客户评价",
+      "contact": "联系我们"
+    },
+    "whatsapp": "通过 WhatsApp 聊天",
+    "hero": {
+      "title": "PT Borneo Semoga Berkah",
+      "subtitle": "棕榈仁粕和棕榈壳贸易",
+      "hook": "将棕榈废料变为有价值的商品",
+      "cta": "联系我们"
+    },
+    "about": {
+      "title": "关于我们",
+      "visionTitle": "愿景",
+      "missionTitle": "使命",
+      "desc": "PT Borneo Semoga Berkah (BSB) 是一家贸易公司，专注于棕榈仁粕（Palm Kernel Meal）和棕榈壳（Palm Kernel Shell）的贸易。随着印尼特别是加里曼丹地区棕榈油企业的不断增加，产生了大量副产品废弃物。这些副产品仍然可以被再利用并转化为经济价值。BSB 致力于将这些副产品转化为可再生资源，并为更加绿色的环境做出贡献。",
+      "vision": [
+        "成为一家在可持续和负责任的棕榈仁粕与棕榈壳贸易中处于领先地位，并能为利益相关者创造附加价值的公司。"
+      ],
+      "mission": [
+        "为客户提供高质量且价格具有竞争力的棕榈仁粕和棕榈壳。",
+        "通过专业和高效的服务提升客户满意度。",
+        "拓展广泛而强大的业务网络，以提升贸易量和收入。",
+        "提高对质量、安全和环境标准的认知与遵循。",
+        "通过创造就业机会和增加收入，为地方和国家经济发展做出贡献。"
+      ]
+    },
+    "products": "产品",
+    "testimonials": {
+      "title": "客户评价",
+      "items": [
+        { "quote": "产品质量好，服务非常到位！", "name": "布迪先生，廖内" },
+        { "quote": "值得信赖的合作伙伴。", "name": "萨丽女士，雅加达" }
+      ]
+    },
+    "contact": {
+      "title": "联系我们",
+      "addressLabel": "地址：",
+      "address": "KH Wahid Hasyim 街道 RT 39, 三马林达, 东加里曼丹 75119",
+      "phoneLabel": "电话：",
+      "phone": "+62 852 5068 8745",
+      "emailLabel": "邮箱：",
+      "email": "Hadi@BSB.co.id",
+      "whatsapp": "https://wa.me/6285250688745",
+      "linkedinLabel": "领英:",
+      "linkedin": "https://www.linkedin.com/in/abdul-hadi",
+      "maps": "https://www.google.com/maps/embed?pb=..."
+    },
+    "gallery": {
+      "title": "图库"
+    },
+    "footer": "© Tera Software Developer。版权所有。"
+  },
+  "ja": {
+    "company": "PT Borneo Semoga Berkah",
+    "nav": {
+      "about": "会社概要",
+      "products": "製品",
+      "testimonials": "お客様の声",
+      "contact": "お問い合わせ"
+    },
+    "whatsapp": "WhatsAppでチャット",
+    "hero": {
+      "title": "PT Borneo Semoga Berkah",
+      "subtitle": "パームカーネルミール・シェルの取引",
+      "hook": "パーム廃棄物を価値ある商品に",
+      "cta": "お問い合わせ"
+    },
+    "about": {
+      "title": "会社概要",
+      "visionTitle": "ビジョン",
+      "missionTitle": "ミッション",
+      "desc": "PT Borneo Semoga Berkah (BSB) は、パームカーネルミール（Palm Kernel Meal）とパームカーネルシェル（Palm Kernel Shell）の取引に特化した商社です。インドネシア、特にカリマンタン地域には多くのパーム油企業が存在し、その結果、多量の副産物が発生します。これらの副産物は経済的価値に転換可能です。BSB は、この副産物を再生可能資源に変え、より緑豊かな環境に貢献しています。",
+      "vision": [
+        "持続可能で責任あるパームカーネルミールおよびパームカーネルシェルの取引において、リーディングカンパニーとなり、ステークホルダーに付加価値を提供すること。"
+      ],
+      "mission": [
+        "高品質で競争力のある価格のパームカーネルミールとパームカーネルシェルを顧客に提供する。",
+        "専門的かつ迅速なサービスで顧客満足度を向上させる。",
+        "広範かつ強力なビジネスネットワークを拡大し、取引量と収益を向上させる。",
+        "企業運営における品質・安全・環境基準の認識と遵守を高める。",
+        "雇用創出と収入増加を通じて、地域および国家経済の発展に貢献する。"
+      ]
+    },
+    "products": "製品",
+    "testimonials": {
+      "title": "お客様の声",
+      "items": [
+        {
+          "quote": "品質の良い製品で、サービスも素晴らしい！",
+          "name": "ブディ氏、リアウ"
+        },
+        {
+          "quote": "信頼できる工場のパートナーです。",
+          "name": "サリ夫人、ジャカルタ"
+        }
+      ]
+    },
+    "contact": {
+      "title": "お問い合わせ",
+      "addressLabel": "住所：",
+      "address": "KH Wahid Hasyim 通り RT 39, サマリンダ, 東カリマンタン 75119",
+      "phoneLabel": "電話：",
+      "phone": "+62 852 5068 8745",
+      "emailLabel": "メール：",
+      "email": "Hadi@BSB.co.id",
+      "whatsapp": "https://wa.me/6285250688745",
+      "linkedinLabel": "リンクトイン:",
+      "linkedin": "https://www.linkedin.com/in/abdul-hadi",
+      "maps": "https://www.google.com/maps/embed?pb=..."
+    },
+    "gallery": {
+      "title": "ギャラリー"
+    },
+    "footer": "© Tera Software Developer. 無断転載を禁じます。"
+  }
+}
