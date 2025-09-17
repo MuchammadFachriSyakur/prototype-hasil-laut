@@ -1,0 +1,11 @@
+{
+  "company": {
+    "name": "CV SEKAWAN CIPTA DINAR"
+  },
+  "navigation": {
+    "home": {
+      "id": "Beranda",
+      "en": "Home"
+    }
+  }
+}

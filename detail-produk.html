@@ -81,111 +81,190 @@
     </section>
 
     <script>
-      // Data produk
+      // Data produk bilingual
       const products = {
         kecap: {
-          title: "Kecap Tradisional Cap Laron",
           img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMldODNT5FtKucgbL4XvgILaxgxyoX0gI8hg&s",
-          desc: `
-        <p>Kecap adalah salah satu bumbu penyedap makanan yang berbentuk cairan kental dan berwarna coklat tua karena dibuat dari fermentasi kedelai hitam, gula, garam serta bumbu-bumbu lainnya sehingga memberikan rasa manis, gurih dan khas.</p>
-        <p>Dibuat secara tradisional, tanpa pengawet dan pewarna buatan. Dengan menggunakan kecap ini, masakan Anda akan terasa lebih nikmat dan lezat.</p>
-        <p>Jika Anda mencari kecap dengan rasa manis yang khas dan autentik, <strong>Kecap Kental Manis Cap Laron dari Sari Kedelai Asli Tuban</strong> adalah pilihan yang tepat untuk Anda.</p>
-      `,
+          title: {
+            id: "Kecap Tradisional Cap Laron",
+            en: "Traditional Soy Sauce Cap Laron",
+          },
+          desc: {
+            id: `
+      <p><strong>Kecap</strong> adalah salah satu bumbu penyedap makanan berbentuk cairan kental berwarna cokelat tua. Terbuat dari fermentasi kedelai hitam, gula, garam, serta rempah-rempah pilihan, kecap ini memberikan rasa manis, gurih, dan khas.</p>
+      <p>Dibuat secara tradisional tanpa tambahan pengawet maupun pewarna buatan, sehingga aman dikonsumsi dan tetap mempertahankan cita rasa autentik.</p>
+      <p>Dengan menggunakan kecap ini, masakan Anda akan terasa lebih nikmat dan lezat. Jadi, jika Anda mencari kecap manis dengan rasa khas dan autentik, <strong>Kecap Kental Manis Cap Laron dari Sari Kedelai Asli Tuban</strong> adalah pilihan yang tepat.</p>
+    `,
+            en: `
+      <p><strong>Soy sauce</strong> is a traditional seasoning in the form of a thick, dark brown liquid. Made from fermented black soybeans, sugar, salt, and selected spices, it delivers a sweet, savory, and distinctive taste.</p>
+      <p>Produced traditionally without preservatives or artificial coloring, making it safe to consume while preserving its authentic flavor.</p>
+      <p>By using this soy sauce, your dishes will taste more delicious and flavorful. If you are looking for sweet soy sauce with a unique and authentic taste, <strong>Cap Laron Sweet Soy Sauce from Original Tuban Soybeans</strong> is the right choice.</p>
+    `,
+          },
         },
         terasi: {
-          title: "Terasi Udang Tuban",
           img: "https://i0.wp.com/resepkoki.id/wp-content/uploads/2017/02/Terasi.jpg?fit=500%2C360&ssl=1",
-          desc: `
-        <p>Bumbu penyedap makanan khas dari Tuban, Jawa Timur Indonesia adalah <strong>Terasi</strong>.</p>
-        <p>Terbuat dari bahan dasar udang rebon atau udang kecil pilihan yang diolah secara tradisional dan higienis tanpa bahan pengawet, menghasilkan rasa gurih dan aroma khas yang kuat.</p>
-        <p>Terasi Tuban ini memiliki aroma tajam dan rasa gurih yang khas, berasal dari asam amino alami (asam glutamat) hasil fermentasi bahan utamanya. Produsen menjaga kualitas bahan baku dan proses pengolahan yang terjaga ketat, menghasilkan produk berkualitas istimewa.</p>
-      `,
+          title: {
+            id: "Terasi Udang Tuban",
+            en: "Tuban Shrimp Paste",
+          },
+          desc: {
+            id: `
+      <p><strong>Terasi</strong> adalah bumbu penyedap makanan khas dari Tuban, Jawa Timur, Indonesia. Terbuat dari udang rebon atau udang kecil pilihan yang diolah secara tradisional dan higienis tanpa bahan pengawet, menghasilkan rasa gurih dan aroma khas yang kuat.</p>
+      <p><strong>Terasi Tuban</strong> memiliki aroma tajam dan rasa gurih yang khas, berasal dari asam amino alami (asam glutamat) hasil fermentasi bahan utamanya.</p>
+      <p>Produsen terasi menjaga kualitas bahan baku dan proses pengolahan secara ketat, sehingga menghasilkan produk berkualitas istimewa yang dapat menghadirkan cita rasa autentik dalam masakan Anda.</p>
+    `,
+            en: `
+      <p><strong>Shrimp Paste</strong> is a traditional seasoning from Tuban, East Java, Indonesia. Made from selected small shrimps (rebon), it is processed traditionally and hygienically without preservatives, resulting in a savory taste with a strong distinctive aroma.</p>
+      <p><strong>Tuban Shrimp Paste</strong> has a sharp aroma and unique umami flavor, derived from natural amino acids (glutamic acid) produced through fermentation of its main ingredients.</p>
+      <p>With carefully maintained raw material quality and strict processing, this product delivers exceptional quality and brings authentic flavor to your dishes.</p>
+    `,
+          },
         },
         kerupuk: {
-          title: "Kerupuk Udang",
           img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPDCQeEB1ohekOweyGjsR8lOetm1DgxCi5FA&s",
-          desc: `
-        <p><strong>Kerupuk udang mentah berkualitas</strong> terbuat dari udang pilihan dan bahan-bahan alami seperti tepung tapioka, gula, garam, dan rempah.</p>
-        <p>Menghasilkan rasa udang yang gurih dan tekstur renyah setelah digoreng. Kerupuk ini sudah bisa langsung digoreng tanpa perlu dijemur terlebih dahulu.</p>
-        <p>Cocok sebagai cemilan, lauk makan, atau oleh-oleh khas Tuban, Jawa Timur.</p>
-        <p><em>Komposisi:</em> udang, tepung tapioka, air, gula, garam, bumbu, dan rempah.</p>
-      `,
+          title: {
+            id: "Kerupuk Udang",
+            en: "Shrimp Crackers",
+          },
+          desc: {
+            id: `
+              <p><strong>Kerupuk udang mentah berkualitas</strong> terbuat dari udang pilihan...</p>
+              <p>Rasanya gurih, renyah, bisa langsung digoreng.</p>
+              <p>Cocok untuk camilan atau oleh-oleh khas Tuban.</p>
+            `,
+            en: `
+              <p><strong>High quality raw shrimp crackers</strong> made from selected shrimp...</p>
+              <p>Tasty, crunchy, and ready to fry without drying.</p>
+              <p>Perfect as snacks or Tuban’s signature souvenirs.</p>
+            `,
+          },
         },
         rengginang: {
-          title: "Rengginang Gurih Khas Tuban",
           img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlUVMzzL7GiJEf52Ok6r9QF6FnzSFlwkFlUw&s",
-          desc: `
-        <p>Rengginang dikenal sebagai camilan dengan tekstur kering dan kriuk yang kuat, serta cita rasa gurih khas Tuban, Jawa Timur.</p>
-        <p>Terbuat dari beras ketan yang dibumbui, dikeringkan, lalu digoreng hingga matang.</p>
-        <p>Dibumbui dengan garam, bawang putih, terasi, atau rempah lainnya untuk memberikan cita rasa nikmat. Karena proses pengeringan, rengginang memiliki daya tahan cukup lama jika disimpan dalam wadah kedap udara.</p>
-      `,
+          title: {
+            id: "Rengginang Gurih Khas Tuban",
+            en: "Crispy Rengginang from Tuban",
+          },
+          desc: {
+            id: `
+              <p>Rengginang adalah camilan gurih dengan tekstur kriuk khas.</p>
+              <p>Terbuat dari beras ketan dibumbui, dikeringkan, lalu digoreng.</p>
+              <p>Awet disimpan dalam wadah kedap udara.</p>
+            `,
+            en: `
+              <p>Rengginang is a savory snack with a crispy texture.</p>
+              <p>Made from seasoned glutinous rice, dried, then fried.</p>
+              <p>Long-lasting if stored in an airtight container.</p>
+            `,
+          },
         },
         kacang: {
-          title: "Kacang Tanah Super Tuban",
           img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRguGzsyDHVhEll1hpced1QvpoqIlGVdcNrYA&s",
-          desc: `
-        <p>Kacang tanah berkualitas tinggi khas Tuban, Jawa Timur, dikenal dengan ciri khas <strong>padat berisi (mentes)</strong>, rasa gurih alami dengan sedikit manis, serta tekstur enak dan renyah saat diolah.</p>
-        <p>Produk ini sering disebut "kualitas super" dan serbaguna untuk berbagai olahan kuliner, mulai dari camilan seperti kacang bawang hingga bahan masakan.</p>
-        <p>Diproses dengan dikupas kulit arinya, siap pakai untuk berbagai kebutuhan kuliner, terjamin keaslian dan kualitasnya.</p>
-      `,
+          title: {
+            id: "Kacang Tanah Super Tuban",
+            en: "Tuban Premium Peanuts",
+          },
+          desc: {
+            id: `
+              <p>Kacang tanah super Tuban terkenal dengan isi padat (mentes)...</p>
+              <p>Rasanya gurih alami, sedikit manis, renyah.</p>
+              <p>Siap dipakai untuk berbagai olahan kuliner.</p>
+            `,
+            en: `
+              <p>Tuban premium peanuts are known for their solid content (mentes)...</p>
+              <p>They taste naturally savory, slightly sweet, and crunchy.</p>
+              <p>Ready to use for various culinary purposes.</p>
+            `,
+          },
         },
         ikan: {
-          title: "Ikan Segar & Kering Khas Tuban",
-          img: "https://tribratanews.polri.go.id/web/image/blog.post/68369/image",
-          desc: `
-        <p><strong>Produk ikan khas Tuban</strong> meliputi ikan segar, ikan asin, ikan asap, pindang kendil, dan ikan suwir.</p>
-        <h3>Ikan Segar</h3>
-        <p>Ikan hasil tangkapan nelayan lokal yang dijaga kesegarannya sejak dari laut hingga ke tangan konsumen.</p>
-        <h3>Ikan Asin</h3>
-        <p>Dibuat dari ikan segar yang diawetkan dengan garam dan dikeringkan secara alami di bawah sinar matahari. Rasanya asin gurih, awet, dan cocok sebagai lauk.</p>
-        <h3>Ikan Asap</h3>
-        <p>Diproses dengan pengasapan kayu bakar khusus, menghadirkan aroma dan rasa khas. Jenis ikan: manyung, tongkol, dan pari.</p>
-        <h3>Pindang Kendil</h3>
-        <p>Olahan ikan layang berbumbu khas Tuban, gurih, dan tahan lama.</p>
-        <h3>Ikan Suwir</h3>
-        <p>Olahan daging ikan (seperti cakalang) yang disuwir dan dibumbui, cocok sebagai lauk praktis dan oleh-oleh khas.</p>
-        <p>Semua produk ikan diproses secara tradisional, tanpa pengawet buatan, mengandalkan bahan alami untuk rasa dan aroma yang autentik.</p>
-      `,
+          img: "image/Product/ikan-asin.jpg",
+          title: {
+            id: "Ikan Segar & Kering Khas Tuban",
+            en: "Fresh & Dried Fish from Tuban",
+          },
+          desc: {
+            id: `
+      <p><strong>Produk ikan segar khas Tuban, Jawa Timur</strong> meliputi berbagai olahan seperti ikan asin, ikan asap (tetet, terang bulan, jambrong), pindang kendil, dan ikan suwir cakalang. Ikan asap dikenal dengan aroma dan rasa unik dari pengasapan tradisional, sementara ikan asin menawarkan cita rasa gurih alami tanpa tambahan pengawet. Pindang kendil adalah olahan pindang berbumbu khas, sedangkan ikan suwir cakalang menjadi salah satu oleh-oleh favorit.</p>
+      <p><strong>Ikan Asap</strong> merupakan kuliner populer yang diolah dengan teknik pengasapan menggunakan kayu bakar khusus. Jenis ikan yang biasa digunakan antara lain manyung, tongkol, dan pari. Produk ini memiliki tekstur kenyal, cita rasa kaya, serta aroma menggoda yang khas.</p>
+      <p><strong>Ikan Asin</strong> dibuat dari ikan segar yang diawetkan menggunakan garam alami. Varian populer meliputi: Ikan Asin Tetet (dikeringkan tradisional di bawah sinar matahari), Ikan Asin Jambrong, dan jenis lain yang tetap mempertahankan rasa gurih asli. Selain itu, <strong>Pindang Kendil</strong> adalah olahan ikan layang segar yang dimasak dengan garam alami, menghasilkan rasa gurih khas, sedangkan <strong>Ikan Suwir Cakalang</strong> adalah olahan praktis yang siap santap.</p>
+      <p>Produk ikan Tuban diproses secara tradisional dengan pengasapan atau pengeringan alami. Ciri khasnya: 
+        <ul>
+          <li><strong>Bahan Alami</strong>: hanya menggunakan garam tanpa pengawet buatan.</li>
+          <li><strong>Rasa & Aroma</strong>: ikan asap menghadirkan aroma khas, sementara ikan asin dan pindang kendil memberikan rasa gurih alami.</li>
+          <li><strong>Tahan Lama</strong>: awet disimpan dengan cara yang tepat, sehingga cocok sebagai bahan masakan maupun oleh-oleh khas.</li>
+        </ul>
+      </p>
+    `,
+            en: `
+      <p><strong>Fresh fish products from Tuban, East Java</strong> include various types such as salted fish, smoked fish (tetet, terang bulan, jambrong), pindang kendil, and shredded cakalang. Smoked fish is known for its distinctive aroma and taste from traditional smoking, while salted fish offers a natural savory flavor without artificial preservatives. Pindang kendil is a seasoned boiled fish specialty, and shredded cakalang is another popular processed product.</p>
+      <p><strong>Smoked Fish</strong> is a favorite dish processed using traditional wood-fired smoking. Common fish used are manyung, tuna, and stingray. It has a chewy texture, rich flavor, and a tempting smoky aroma.</p>
+      <p><strong>Salted Fish</strong> is made from fresh fish preserved with natural salt. Popular varieties include Tetet (sun-dried traditional fish), Jambrong, and more. In addition, <strong>Pindang Kendil</strong> is made from fresh mackerel boiled with natural salt, while <strong>Shredded Cakalang</strong> is a practical processed fish product ready to eat.</p>
+      <p>Tuban fish products are processed traditionally using smoking or sun drying methods. Their characteristics are:
+        <ul>
+          <li><strong>Natural Ingredients</strong>: preserved only with natural salt, no artificial preservatives.</li>
+          <li><strong>Taste & Aroma</strong>: smoked fish provides a unique smoky aroma, while salted and pindang kendil fish deliver natural savory flavors.</li>
+          <li><strong>Durability</strong>: preserved fish lasts longer when stored properly, making it suitable for cooking and as authentic Tuban souvenirs.</li>
+        </ul>
+      </p>
+    `,
+          },
         },
         tembakau: {
-          title: "Tembakau Tuban",
           img: "image/Product/Tembakau.jpeg",
-          desc: `
-        <p><strong>Tembakau Tuban</strong> dikenal dengan aroma khas dan kualitas tinggi, hasil dari tanah subur dan iklim yang mendukung di pesisir utara Jawa Timur.</p>
-        <h3>Proses Pasca Panen</h3>
-        <p>Daun tembakau diproses melalui metode <em>curing</em> (pengeringan):</p>
-        <ul>
-          <li><em>Flue-cured:</em> dikeringkan dengan panas buatan, menghasilkan warna kuning keemasan.</li>
-          <li><em>Air-cured:</em> dikeringkan alami di gudang berventilasi.</li>
-          <li><em>Sun-cured:</em> dijemur langsung di bawah sinar matahari.</li>
-          <li><em>Fire-cured:</em> dikeringkan dekat api kayu bakar, beraroma asap khas.</li>
-        </ul>
-        <h3>Pemanfaatan</h3>
-        <ul>
-          <li>Bahan utama industri rokok, cerutu, dan pipa.</li>
-          <li>Bahan pestisida alami berbasis nikotin.</li>
-          <li>Farmasi (protein untuk riset dan vaksin).</li>
-          <li>Pupuk organik dari limbah tembakau.</li>
-          <li>Sumber bioenergi (biomassa).</li>
-        </ul>
-      `,
+          title: {
+            id: "Tembakau Tuban",
+            en: "Tuban Tobacco",
+          },
+          desc: {
+            id: `
+      <p><strong>Tembakau Tuban</strong> tumbuh sebagai tanaman tahunan dengan daun lebar berbulu halus dan bunga berbentuk terompet berwarna putih, merah muda, atau merah. Tingginya bisa mencapai 1–3 meter di iklim hangat dengan tanah subur.</p>
+      <p><u>Proses Pasca Panen:</u> Setelah dipanen, daun tembakau melalui proses curing (pengeringan) untuk menghasilkan aroma, rasa, dan warna yang khas:</p>
+      <ul>
+        <li><strong>Flue-cured:</strong> Dikeringkan dengan panas buatan, menghasilkan warna kuning keemasan dengan kadar gula tinggi (contoh: Virginia).</li>
+        <li><strong>Air-cured:</strong> Dikeringkan di udara terbuka, menghasilkan warna cokelat dengan nikotin tinggi (contoh: Burley).</li>
+        <li><strong>Sun-cured:</strong> Dikeringkan di bawah sinar matahari, umum pada tembakau oriental.</li>
+        <li><strong>Fire-cured:</strong> Dikeringkan dekat api kayu bakar, memberi aroma berasap khas.</li>
+      </ul>
+      <p>Setelah curing, daun sering difermentasi untuk memperkaya aroma dan mengurangi kekasaran.</p>
+      <p><u>Pemanfaatan:</u> Rokok, cerutu, pipa, dan tembakau kunyah. Selain itu, juga digunakan untuk pestisida alami (nikotin), penelitian farmasi (protein & vaksin), pupuk organik, dan bioenergi.</p>
+    `,
+            en: `
+      <p><strong>Tuban Tobacco</strong> grows as an annual plant with broad hairy leaves and trumpet-shaped flowers in white, pink, or red. It can reach 1–3 meters in height in warm climates with fertile soil.</p>
+      <p><u>Post-Harvest Process:</u> After harvest, tobacco leaves undergo curing to develop aroma, flavor, and color:</p>
+      <ul>
+        <li><strong>Flue-cured:</strong> Artificial heat drying, producing golden-yellow leaves with high sugar content (e.g., Virginia).</li>
+        <li><strong>Air-cured:</strong> Naturally dried in ventilated barns, resulting in brown leaves with low sugar and high nicotine (e.g., Burley).</li>
+        <li><strong>Sun-cured:</strong> Dried under direct sunlight, common for oriental tobacco.</li>
+        <li><strong>Fire-cured:</strong> Dried near wood smoke, giving a distinctive smoky aroma.</li>
+      </ul>
+      <p>After curing, fermentation is often done to enhance complexity and reduce harshness.</p>
+      <p><u>Main Uses:</u> Cigarettes, cigars, pipe tobacco, chewing tobacco. Other uses include natural pesticide (nicotine), pharmaceuticals (proteins & vaccines), fertilizer, and bioenergy.</p>
+    `,
+          },
         },
       };
 
-      // Ambil parameter dari URL (?id=xxx)
+      // Ambil parameter dari URL (?id=xxx&lang=xx)
       const urlParams = new URLSearchParams(window.location.search);
       const productId = urlParams.get("id");
+      let lang = urlParams.get("lang") || "id";
+      if (!["id", "en"].includes(lang)) lang = "id";
 
       // Render konten
       if (products[productId]) {
+        const product = products[productId];
         document.getElementById("product-title").innerText =
-          products[productId].title;
-        document.getElementById("product-img").src = products[productId].img;
-        document.getElementById("product-desc").innerHTML =
-          products[productId].desc;
+          product.title[lang];
+        document.getElementById("product-img").src = product.img;
+        document.getElementById("product-desc").innerHTML = product.desc[lang];
 
-        const waNumber = "6285230017377"; // nomor WA tujuan
-        const waMessage = `Halo, saya tertarik dengan produk ${products[productId].title}. Apakah masih tersedia?`;
+        const waNumber = "6285230017377";
+        const waMessage =
+          lang === "id"
+            ? `Halo, saya tertarik dengan produk ${product.title[lang]}. Apakah masih tersedia?`
+            : `Hello, I am interested in product ${product.title[lang]}. Is it still available?`;
         document.querySelector(
           ".btn-order"
         ).href = `https://api.whatsapp.com/send?phone=${waNumber}&text=${encodeURIComponent(
@@ -193,7 +272,9 @@
         )}`;
       } else {
         document.querySelector(".product-detail").innerHTML =
-          "<h2>Produk tidak ditemukan</h2>";
+          lang === "id"
+            ? "<h2>Produk tidak ditemukan</h2>"
+            : "<h2>Product not found</h2>";
       }
     </script>
   </body>
