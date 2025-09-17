@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV SEKAWAN CIPTA DINAR</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+      }
+      body {
+        font-family: "Segoe UI", sans-serif;
+        line-height: 1.6;
+        background-color: #fdfcf9;
+        color: #333;
+      }
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      header {
+        background-image: url("image/hero.jpg");
+        height: 100vh;
+        position: relative;
+        color: white;
+      }
+      .overlay {
+        background: rgba(0, 0, 0, 0.6);
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 20px;
+      }
+      header h1 {
+        font-size: 3rem;
+        color: #c59d5f;
+      }
+      header p {
+        font-size: 1.2rem;
+        margin-top: 10px;
+      }
+      .cta-buttons {
+        margin-top: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+      }
+      .cta-buttons a {
+        background: #c59d5f;
+        padding: 12px 24px;
+        color: white;
+        border-radius: 5px;
+        transition: background 0.3s ease;
+      }
+      .cta-buttons a:hover {
+        background: #a58040;
+      }
+
+      nav {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background: white;
+        padding: 10px 20px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        z-index: 999;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .logo {
+        height: 50px;
+        object-fit: contain;
+      }
+
+      nav h2 {
+        color: #c59d5f;
+      }
+      nav ul {
+        display: flex;
+        list-style: none;
+        gap: 25px;
+      }
+      nav ul li a {
+        font-weight: bold;
+        color: #333;
+      }
+
+      .mobile-menu {
+        display: none;
+        font-size: 1.8rem;
+        cursor: pointer;
+      }
+
+      section {
+        padding: 80px 20px;
+        max-width: 1100px;
+        margin: auto;
+        opacity: 0;
+        transform: translateY(40px);
+        transition: all 0.8s ease-out;
+      }
+      section.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      section h2 {
+        font-size: 2.5rem;
+        color: #c59d5f;
+        margin-bottom: 30px;
+        text-align: center;
+      }
+      section p {
+        text-align: center;
+        margin-bottom: 40px;
+      }
+
+      .produk-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 30px;
+      }
+      .produk-card {
+        background: white;
+        border: 1px solid #eee;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.08);
+        text-align: center;
+      }
+      .produk-card img {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 6px;
+      }
+      .produk-card h3 {
+        margin-top: 15px;
+        color: #c59d5f;
+      }
+
+      footer {
+        background: #222;
+        color: #ccc;
+        text-align: center;
+        padding: 40px 20px;
+      }
+      footer h3 {
+        color: #c59d5f;
+        margin-bottom: 15px;
+      }
+
+      @media (max-width: 768px) {
+        nav ul {
+          display: none;
+          flex-direction: column;
+          background: white;
+          position: absolute;
+          top: 60px;
+          right: 20px;
+          padding: 10px 20px;
+          box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+          gap: 15px;
+        }
+        nav ul.show {
+          display: flex;
+        }
+        .mobile-menu {
+          display: block;
+        }
+        header h1 {
+          font-size: 2.2rem;
+        }
+        header p {
+          font-size: 1rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="#home">
+        <img src="image/Logo.jpeg" alt="Logo Rasa Alam" class="logo" />
+      </a>
+      <div class="mobile-menu" onclick="toggleMenu()">☰</div>
+      <ul id="nav-links">
+        <li><a href="#home">Beranda</a></li>
+        <li><a href="#tentang">Tentang</a></li>
+        <li><a href="#produk">Produk</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+      </ul>
+    </nav>
+
+    <header id="home">
+      <div class="overlay">
+        <h1>CV SEKAWAN CIPTA DINAR</h1>
+        <p>Dari Laut dan Ladang Nusantara, untuk Meja Makan Anda</p>
+        <div class="cta-buttons">
+          <a href="#produk">Lihat Produk</a>
+          <a href="#kontak">Hubungi Kami</a>
+        </div>
+      </div>
+    </header>
+
+    <section id="tentang">
+      <h2>Tentang Kami</h2>
+      <p>
+        CV Sekawan Cipta Dinar adalah produsen dan distributor hasil bumi dan
+        laut berkualitas tinggi. Produk kami meliputi kecap, terasi, kerupuk
+        udang, rengginang, ikan asin, dan banyak lagi — langsung dari petani dan
+        nelayan lokal ke tangan Anda.
+      </p>
+    </section>
+
+    <section id="produk">
+      <h2>Produk Unggulan</h2>
+      <div class="produk-grid">
+        <a href="detail-produk.html?id=kecap" class="produk-card">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMldODNT5FtKucgbL4XvgILaxgxyoX0gI8hg&s"
+            alt="Kecap"
+          />
+          <h3>Kecap Tradisional</h3>
+          <p>Rasa manis gurih dari kedelai pilihan, fermentasi alami.</p>
+        </a>
+        <a href="detail-produk.html?id=terasi" class="produk-card">
+          <img
+            src="https://i0.wp.com/resepkoki.id/wp-content/uploads/2017/02/Terasi.jpg?fit=500%2C360&ssl=1"
+            alt="Terasi"
+          />
+          <h3>Terasi Udang</h3>
+          <p>Dibuat dari udang segar, aroma kuat dan sedap.</p>
+        </a>
+        <a href="detail-produk.html?id=kerupuk" class="produk-card">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPDCQeEB1ohekOweyGjsR8lOetm1DgxCi5FA&s"
+            alt="Kerupuk Udang"
+          />
+          <h3>Kerupuk Udang</h3>
+          <p>Renyah dan gurih, cocok untuk semua hidangan.</p>
+        </a>
+        <a href="detail-produk.html?id=rengginang" class="produk-card">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlUVMzzL7GiJEf52Ok6r9QF6FnzSFlwkFlUw&s"
+            alt="Rengginang"
+          />
+          <h3>Rengginang</h3>
+          <p>Olahan nasi ketan dengan cita rasa tradisional.</p>
+        </a>
+        <a href="detail-produk.html?id=ikan" class="produk-card">
+          <img
+            src="https://tribratanews.polri.go.id/web/image/blog.post/68369/image"
+            alt="Ikan Asin"
+          />
+          <h3>Ikan Segar dan Asin</h3>
+          <p>Asin khas laut utara Jawa, awet dan tahan lama.</p>
+        </a>
+        <a href="detail-produk.html?id=kacang" class="produk-card">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRguGzsyDHVhEll1hpced1QvpoqIlGVdcNrYA&s"
+            alt="Kacang Tanah"
+          />
+          <h3>Kacang Tanah</h3>
+          <p>Dikupas dan dipanggang, gurih dan bergizi tinggi.</p>
+        </a>
+        <a href="detail-produk.html?id=tembakau" class="produk-card">
+          <img
+            src="image/Product/Tembakau.jpeg"
+            alt="Tembakau Tuban"
+          />
+          <h3>Tembakau Tuban</h3>
+          <p>
+            Diproses secara tradisional, cocok untuk industri rokok, cerutu,
+            hingga bioenergi.
+          </p>
+        </a>
+      </div>
+    </section>
+
+    <section id="kontak">
+      <h2>Kontak Kami</h2>
+      <p>
+        📍 Jl. Raya Waru No.17, Kedungrejo, Kec. Waru, Kabupaten Sidoarjo, Jawa
+        Timur 61256
+      </p>
+      <p>📞 0852-3001-7377</p>
+      <p>📧 sekawanciptadinar@outlook.co.id</p>
+    </section>
+
+    <footer>
+      <h3>CV SEKAWAN CIPTA DINAR</h3>
+      <p>&copy; 2025. Seluruh hak cipta dilindungi.</p>
+    </footer>
+
+    <script>
+      function toggleMenu() {
+        const navLinks = document.getElementById("nav-links");
+        navLinks.classList.toggle("show");
+      }
+
+      const sections = document.querySelectorAll("section");
+      window.addEventListener("scroll", () => {
+        sections.forEach((sec) => {
+          const rect = sec.getBoundingClientRect();
+          if (rect.top < window.innerHeight - 100) {
+            sec.classList.add("visible");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

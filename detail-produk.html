@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detail Produk - CV SEKAWAN CIPTA DINAR</title>
+    <style>
+      body {
+        font-family: "Segoe UI", sans-serif;
+        margin: 0;
+        background: #fdfcf9;
+        line-height: 1.6;
+        color: #333;
+      }
+      nav {
+        background: white;
+        padding: 10px 20px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .logo {
+        height: 50px;
+      }
+      .product-detail {
+        max-width: 900px;
+        margin: 60px auto;
+        padding: 20px;
+      }
+      .product-detail img {
+        width: 100%;
+        border-radius: 10px;
+        margin-bottom: 25px;
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+      }
+      .product-info h1 {
+        color: #c59d5f;
+        font-size: 2rem;
+        margin-bottom: 15px;
+      }
+      .product-info article p {
+        margin-bottom: 15px;
+        text-align: justify;
+      }
+      .product-info article ul {
+        margin: 10px 0 20px 20px;
+      }
+      .btn-order {
+        display: inline-block;
+        margin-top: 20px;
+        background: #c59d5f;
+        color: white;
+        padding: 12px 24px;
+        border-radius: 6px;
+        text-decoration: none;
+      }
+      .btn-order:hover {
+        background: #a58040;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <a href="index.html#home">
+        <img src="image/Logo.jpeg" alt="Logo" class="logo" />
+      </a>
+    </nav>
+
+    <!-- Detail Produk -->
+    <section class="product-detail">
+      <img id="product-img" src="" alt="Produk" />
+      <div class="product-info">
+        <h1 id="product-title"></h1>
+        <article id="product-desc"></article>
+        <a href="https://wa.me/6285230017377" target="_blank" class="btn-order"
+          >Pesan Sekarang</a
+        >
+      </div>
+    </section>
+
+    <script>
+      // Data produk
+      const products = {
+        kecap: {
+          title: "Kecap Tradisional Cap Laron",
+          img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMldODNT5FtKucgbL4XvgILaxgxyoX0gI8hg&s",
+          desc: `
+        <p>Kecap adalah salah satu bumbu penyedap makanan yang berbentuk cairan kental dan berwarna coklat tua karena dibuat dari fermentasi kedelai hitam, gula, garam serta bumbu-bumbu lainnya sehingga memberikan rasa manis, gurih dan khas.</p>
+        <p>Dibuat secara tradisional, tanpa pengawet dan pewarna buatan. Dengan menggunakan kecap ini, masakan Anda akan terasa lebih nikmat dan lezat.</p>
+        <p>Jika Anda mencari kecap dengan rasa manis yang khas dan autentik, <strong>Kecap Kental Manis Cap Laron dari Sari Kedelai Asli Tuban</strong> adalah pilihan yang tepat untuk Anda.</p>
+      `,
+        },
+        terasi: {
+          title: "Terasi Udang Tuban",
+          img: "https://i0.wp.com/resepkoki.id/wp-content/uploads/2017/02/Terasi.jpg?fit=500%2C360&ssl=1",
+          desc: `
+        <p>Bumbu penyedap makanan khas dari Tuban, Jawa Timur Indonesia adalah <strong>Terasi</strong>.</p>
+        <p>Terbuat dari bahan dasar udang rebon atau udang kecil pilihan yang diolah secara tradisional dan higienis tanpa bahan pengawet, menghasilkan rasa gurih dan aroma khas yang kuat.</p>
+        <p>Terasi Tuban ini memiliki aroma tajam dan rasa gurih yang khas, berasal dari asam amino alami (asam glutamat) hasil fermentasi bahan utamanya. Produsen menjaga kualitas bahan baku dan proses pengolahan yang terjaga ketat, menghasilkan produk berkualitas istimewa.</p>
+      `,
+        },
+        kerupuk: {
+          title: "Kerupuk Udang",
+          img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPDCQeEB1ohekOweyGjsR8lOetm1DgxCi5FA&s",
+          desc: `
+        <p><strong>Kerupuk udang mentah berkualitas</strong> terbuat dari udang pilihan dan bahan-bahan alami seperti tepung tapioka, gula, garam, dan rempah.</p>
+        <p>Menghasilkan rasa udang yang gurih dan tekstur renyah setelah digoreng. Kerupuk ini sudah bisa langsung digoreng tanpa perlu dijemur terlebih dahulu.</p>
+        <p>Cocok sebagai cemilan, lauk makan, atau oleh-oleh khas Tuban, Jawa Timur.</p>
+        <p><em>Komposisi:</em> udang, tepung tapioka, air, gula, garam, bumbu, dan rempah.</p>
+      `,
+        },
+        rengginang: {
+          title: "Rengginang Gurih Khas Tuban",
+          img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlUVMzzL7GiJEf52Ok6r9QF6FnzSFlwkFlUw&s",
+          desc: `
+        <p>Rengginang dikenal sebagai camilan dengan tekstur kering dan kriuk yang kuat, serta cita rasa gurih khas Tuban, Jawa Timur.</p>
+        <p>Terbuat dari beras ketan yang dibumbui, dikeringkan, lalu digoreng hingga matang.</p>
+        <p>Dibumbui dengan garam, bawang putih, terasi, atau rempah lainnya untuk memberikan cita rasa nikmat. Karena proses pengeringan, rengginang memiliki daya tahan cukup lama jika disimpan dalam wadah kedap udara.</p>
+      `,
+        },
+        kacang: {
+          title: "Kacang Tanah Super Tuban",
+          img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRguGzsyDHVhEll1hpced1QvpoqIlGVdcNrYA&s",
+          desc: `
+        <p>Kacang tanah berkualitas tinggi khas Tuban, Jawa Timur, dikenal dengan ciri khas <strong>padat berisi (mentes)</strong>, rasa gurih alami dengan sedikit manis, serta tekstur enak dan renyah saat diolah.</p>
+        <p>Produk ini sering disebut "kualitas super" dan serbaguna untuk berbagai olahan kuliner, mulai dari camilan seperti kacang bawang hingga bahan masakan.</p>
+        <p>Diproses dengan dikupas kulit arinya, siap pakai untuk berbagai kebutuhan kuliner, terjamin keaslian dan kualitasnya.</p>
+      `,
+        },
+        ikan: {
+          title: "Ikan Segar & Kering Khas Tuban",
+          img: "https://tribratanews.polri.go.id/web/image/blog.post/68369/image",
+          desc: `
+        <p><strong>Produk ikan khas Tuban</strong> meliputi ikan segar, ikan asin, ikan asap, pindang kendil, dan ikan suwir.</p>
+        <h3>Ikan Segar</h3>
+        <p>Ikan hasil tangkapan nelayan lokal yang dijaga kesegarannya sejak dari laut hingga ke tangan konsumen.</p>
+        <h3>Ikan Asin</h3>
+        <p>Dibuat dari ikan segar yang diawetkan dengan garam dan dikeringkan secara alami di bawah sinar matahari. Rasanya asin gurih, awet, dan cocok sebagai lauk.</p>
+        <h3>Ikan Asap</h3>
+        <p>Diproses dengan pengasapan kayu bakar khusus, menghadirkan aroma dan rasa khas. Jenis ikan: manyung, tongkol, dan pari.</p>
+        <h3>Pindang Kendil</h3>
+        <p>Olahan ikan layang berbumbu khas Tuban, gurih, dan tahan lama.</p>
+        <h3>Ikan Suwir</h3>
+        <p>Olahan daging ikan (seperti cakalang) yang disuwir dan dibumbui, cocok sebagai lauk praktis dan oleh-oleh khas.</p>
+        <p>Semua produk ikan diproses secara tradisional, tanpa pengawet buatan, mengandalkan bahan alami untuk rasa dan aroma yang autentik.</p>
+      `,
+        },
+        tembakau: {
+          title: "Tembakau Tuban",
+          img: "image/Product/Tembakau.jpeg",
+          desc: `
+        <p><strong>Tembakau Tuban</strong> dikenal dengan aroma khas dan kualitas tinggi, hasil dari tanah subur dan iklim yang mendukung di pesisir utara Jawa Timur.</p>
+        <h3>Proses Pasca Panen</h3>
+        <p>Daun tembakau diproses melalui metode <em>curing</em> (pengeringan):</p>
+        <ul>
+          <li><em>Flue-cured:</em> dikeringkan dengan panas buatan, menghasilkan warna kuning keemasan.</li>
+          <li><em>Air-cured:</em> dikeringkan alami di gudang berventilasi.</li>
+          <li><em>Sun-cured:</em> dijemur langsung di bawah sinar matahari.</li>
+          <li><em>Fire-cured:</em> dikeringkan dekat api kayu bakar, beraroma asap khas.</li>
+        </ul>
+        <h3>Pemanfaatan</h3>
+        <ul>
+          <li>Bahan utama industri rokok, cerutu, dan pipa.</li>
+          <li>Bahan pestisida alami berbasis nikotin.</li>
+          <li>Farmasi (protein untuk riset dan vaksin).</li>
+          <li>Pupuk organik dari limbah tembakau.</li>
+          <li>Sumber bioenergi (biomassa).</li>
+        </ul>
+      `,
+        },
+      };
+
+      // Ambil parameter dari URL (?id=xxx)
+      const urlParams = new URLSearchParams(window.location.search);
+      const productId = urlParams.get("id");
+
+      // Render konten
+      if (products[productId]) {
+        document.getElementById("product-title").innerText =
+          products[productId].title;
+        document.getElementById("product-img").src = products[productId].img;
+        document.getElementById("product-desc").innerHTML =
+          products[productId].desc;
+
+        const waNumber = "6285230017377"; // nomor WA tujuan
+        const waMessage = `Halo, saya tertarik dengan produk ${products[productId].title}. Apakah masih tersedia?`;
+        document.querySelector(
+          ".btn-order"
+        ).href = `https://api.whatsapp.com/send?phone=${waNumber}&text=${encodeURIComponent(
+          waMessage
+        )}`;
+      } else {
+        document.querySelector(".product-detail").innerHTML =
+          "<h2>Produk tidak ditemukan</h2>";
+      }
+    </script>
+  </body>
+</html>
