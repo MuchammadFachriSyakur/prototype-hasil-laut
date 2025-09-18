@@ -252,6 +252,8 @@
       let lang = urlParams.get("lang") || "id";
       if (!["id", "en"].includes(lang)) lang = "id";
 
+      console.log(lang);
+
       // Render konten
       if (products[productId]) {
         const product = products[productId];
@@ -265,11 +267,14 @@
           lang === "id"
             ? `Halo, saya tertarik dengan produk ${product.title[lang]}. Apakah masih tersedia?`
             : `Hello, I am interested in product ${product.title[lang]}. Is it still available?`;
-        document.querySelector(
-          ".btn-order"
-        ).href = `https://api.whatsapp.com/send?phone=${waNumber}&text=${encodeURIComponent(
+
+        const btnOrder = document.querySelector(".btn-order");
+        btnOrder.href = `https://api.whatsapp.com/send?phone=${waNumber}&text=${encodeURIComponent(
           waMessage
         )}`;
+
+        // Ubah teks tombol sesuai bahasa
+        btnOrder.textContent = lang === "id" ? "Pesan Sekarang" : "Order Now";
       } else {
         document.querySelector(".product-detail").innerHTML =
           lang === "id"
